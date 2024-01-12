@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ngo Anti-Corruption</title>
+    <link rel="icon" href="../static/img/ngo_logo.jpg" type="image/icon type" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: rgb(41, 41, 41)">
+    <div class="col d-flex justify-content-center" style="margin-top: 150px">
+      <div class="card" style="width: 22rem">
+        <div class="card-body" style="margin: 10px">
+          <form action="usersignup" method="post">
+            {% csrf_token %} 
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="../static/img/ngo_logo.jpg"
+                width="80px"
+                height="80px"
+                alt="Italian Trulli"
+                style="border-radius: 10px"
+              />
+            </div>
+            <br />
+            <h4
+              style="
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              "
+            >
+              <b
+                ><i
+                  >Ngo <br />
+                  Anti-Corruption</i
+                ></b
+              >
+            </h4>
+            <br />
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name"
+                name="username"
+                required
+              />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="phone"
+                name="phone"
+                required
+              />
+              <label for="floatingInput">Phone number</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+                name="email"
+                required
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <br />
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-dark" type="submit">Sign Up</button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <a href="/" style="text-decoration: none"
+            ><p style="text-align: center; color: rgb(36, 35, 35)">
+              <small><b>LOG IN</b></small>
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
